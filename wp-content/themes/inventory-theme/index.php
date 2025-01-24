@@ -1,3 +1,9 @@
+<?php
+get_header();
+get_template_part('templates/page-dashboard');
+get_footer();
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>> 
 
@@ -26,4 +32,6 @@
     <?php wp_footer(); ?>
 </body>
 </html>
+
+
 
