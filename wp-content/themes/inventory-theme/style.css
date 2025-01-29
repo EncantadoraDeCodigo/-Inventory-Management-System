@@ -1,0 +1,18 @@
+nav {
+    background-color: #01796f !important; /* Color verde de la barra lateral */
+    color: white;
+}
+
+.nav-link {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white !important;
+}
+
+.nav-item i {
+    margin-right: 8px;
+}

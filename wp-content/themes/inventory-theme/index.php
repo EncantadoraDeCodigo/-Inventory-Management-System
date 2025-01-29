@@ -1,16 +1,3 @@
-<?php
-get_header();
-
-get_template_part('templates/page-dashboard');
-get_template_part('templates/sidebar');
-
-
-get_footer();
-?>
-
-
-
-
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -21,23 +8,21 @@ get_footer();
 </head>
 
 <body <?php body_class(); ?>>
-    <header>
-        <h1><?php bloginfo('name'); ?></h1>
-        <nav><?php wp_nav_menu(); ?></nav>
-    </header>
     <main>
-        <?php
+    <?php
 
-        if (have_posts()) {
-            while (have_posts()) {
-                the_post();
-                the_title('<h3>', '</h3>');
-                the_content();
-            }
-        }
-        ?>
+    get_template_part('templates/sidebar');
+    get_header();
+    get_template_part('templates/page-dashboard');
+
+    get_footer();
+    ?>
     </main>
     <?php wp_footer(); ?>
+
+
 </body>
 
 </html>
+
+
