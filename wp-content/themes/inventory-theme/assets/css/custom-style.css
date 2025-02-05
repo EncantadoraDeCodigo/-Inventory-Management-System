@@ -1,0 +1,15 @@
+/* Forzar aplicación de estilos y evitar sobrescritura de Bootstrap */
+body header.navbar {
+    background-color: #11c6b1 !important; /* Asegura que el color se aplique */
+}
+
+/* Estilos de los enlaces de la barra lateral */
+body nav.sidebar .nav-link {
+    color: rgb(95, 24, 201) !important;
+    padding: 12px;
+}
+
+body nav.sidebar .nav-link:hover {
+    background-color: rgba(5, 212, 71, 0.2) !important;
+}
+

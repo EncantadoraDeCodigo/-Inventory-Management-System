@@ -4,6 +4,7 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php bloginfo('name'); ?> - <?php wp_title(); ?></title>
+    <link rel="stylesheet" id="custom-style-css" href="http://localhost/inventorySystem/wordpress/wp-content/themes/inventory-theme/assets/css/custom-style.css?ver=1234567890" type="text/css" media="all">
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

@@ -1,4 +1,4 @@
-<nav class="bg-dark text-white p-2" style="width: 250px; height: 100vh; position: fixed; top: 50; left: 0; overflow-y: auto;">
+<nav class="bg-dark text-white p-2" style="width: 250px; height: 100vh; position: fixed; top: 10; left: 0; overflow-y: auto;">
     <div class="text-center">
         
         <img src="<?php echo get_template_directory_uri(); ?>/assets/imagenes/logo.png" width="80" class="rounded-circle">
