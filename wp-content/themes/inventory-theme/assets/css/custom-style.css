@@ -1,15 +1,77 @@
-/* Forzar aplicación de estilos y evitar sobrescritura de Bootstrap */
-body header.navbar {
-    background-color: #11c6b1 !important; /* Asegura que el color se aplique */
+/* Dashboard Cards */
+.dashboard-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 80px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
 }
 
-/* Estilos de los enlaces de la barra lateral */
-body nav.sidebar .nav-link {
-    color: rgb(95, 24, 201) !important;
-    padding: 12px;
+.dashboard-card:hover {
+    transform: scale(1.05);
 }
 
-body nav.sidebar .nav-link:hover {
-    background-color: rgba(5, 212, 71, 0.2) !important;
+/* Iconos dentro de las tarjetas */
+.dashboard-card .icon-container {
+    font-size: 28px;
+    display: grid;
+    justify-content:left;
+    width: 25%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
 }
 
+/* Contenedor del texto */
+.dashboard-card .text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos del título */
+.dashboard-card .text-container span {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Estilos del número */
+.dashboard-card .text-container h3 {
+    font-size: 24px;
+}
+
+/* Header */
+.navbar {
+    background-color: #222b2a !important;
+    height: 60px;
+}
+
+/* Notificaciones */
+.navbar .fa-bell {
+    cursor: pointer;
+}
+
+.navbar .badge {
+    font-size: 12px;
+    padding: 4px 6px;
+}
+
+/* Perfil */
+.navbar .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar .dropdown-menu {
+    min-width: 200px;
+    border-radius: 10px;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.navbar img {
+    border: 2px solid white;
+}
