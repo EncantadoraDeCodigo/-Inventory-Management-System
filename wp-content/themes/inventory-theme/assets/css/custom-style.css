@@ -1,9 +1,15 @@
 /* Dashboard Cards */
+.d-flex{
+    margin-left: 100px;
+}
+
 .dashboard-card {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     height: 80px;
+    width: 100%; /* Makes it responsive to the parent container */
+    max-width: 250px; /* Change this value to manipulate the width */
     color: rgb(255, 255, 255);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
@@ -13,31 +19,51 @@
     transform: scale(1.05);
 }
 
-/* Iconos dentro de las tarjetas */
+/* Icons inside the cards */
 .dashboard-card .icon-container {
     font-size: 28px;
     display: grid;
-    justify-content:left;
+    justify-content: left;
     width: 25%;
     height: 200%;
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* Contenedor del texto */
+/* Text container */
 .dashboard-card .text-container {
     display: flex;
     flex-direction: column;
+    flex-grow: 1; /* Ensures text fills remaining space dynamically */
 }
 
-/* Estilos del título */
+/* Title styles */
 .dashboard-card .text-container span {
     font-size: 14px;
     opacity: 0.8;
 }
 
-/* Estilos del número */
+/* Number styles */
 .dashboard-card .text-container h3 {
     font-size: 24px;
+}
+
+/* Responsive width adjustments */
+@media (max-width: 1200px) {
+    .dashboard-card {
+        max-width: 220px; /* Slightly smaller on medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .dashboard-card {
+        max-width: 180px; /* Smaller for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-card {
+        max-width: 100%; /* Full width on mobile */
+    }
 }
 
 /* Header */
