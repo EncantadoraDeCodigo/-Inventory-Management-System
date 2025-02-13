@@ -1,41 +1,40 @@
-<nav class="bg-dark text-white p-2" style="width: 250px; height: 100vh; position: fixed; top: 10; left: 0; overflow-y: auto;">
-    <div class="text-center">
-        
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/imagenes/logo.png" width="80" class="rounded-circle">
-        <p class="mt-2">Diego Carmona Bernal</p>
-        <small>carmona.bernal.diego@email.com</small>
+<div id="sidebar" class="sidebar">
+    <!-- Profile Section -->
+    <div class="sidebar-profile d-flex align-items-center">
+        <img src="path_to_profile_picture.jpg" alt="User Profile" class="profile-pic">
+        <div class="profile-info">
+            <span class="profile-name">Diego Carmona Bernal</span>
+            <span class="profile-email">carmonabernaldiego@gmail.com</span>
+        </div>
+        <button id="profile-dropdown-toggle" class="btn btn-light">
+            <i class="fas fa-chevron-down"></i>
+        </button>
     </div>
-    <hr class="border-light">
+
+    <!-- Sidebar Menu -->
     <ul class="nav flex-column">
         <li class="nav-item">
-            <a class="nav-link text-white" href="<?php echo site_url('/dashboard'); ?>">
-                <i class="fas fa-tachometer-alt"></i> Dashboard
-            </a>
+            <a href="#" class="nav-link active"><i class="bi bi-house"></i> Dashboard</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" href="<?php echo site_url('/clients'); ?>">
-                <i class="fas fa-users"></i> Clientes
-            </a>
+            <a href="#" class="nav-link"><i class="bi bi-people"></i> Clientes</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" href="<?php echo site_url('/products'); ?>">
-                <i class="fas fa-box"></i> Gestión de Productos
-            </a>
+            <a href="#" class="nav-link"><i class="bi bi-box-seam"></i> Gestión de Productos <i class="bi bi-plus float-end"></i></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" href="<?php echo site_url('/inventory'); ?>">
-                <i class="fas fa-warehouse"></i> Gestión de Existencias
-            </a>
+            <a href="#" class="nav-link"><i class="bi bi-clipboard-check"></i> Gestión de Existencias</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" href="<?php echo site_url('/reports'); ?>">
-                <i class="fas fa-chart-line"></i> Reportes
-            </a>
+            <a href="#" class="nav-link"><i class="bi bi-person-lines-fill"></i> Gestión de Usuarios</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" href="<?php echo site_url('/settings'); ?>">
-                <i class="fas fa-cog"></i> Configuración
-            </a>
+            <a href="#" class="nav-link"><i class="bi bi-bar-chart"></i> Reportes</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link"><i class="bi bi-gear"></i> Configuración <i class="bi bi-plus float-end"></i></a>
         </li>
     </ul>
+</div>
+
 </nav>
