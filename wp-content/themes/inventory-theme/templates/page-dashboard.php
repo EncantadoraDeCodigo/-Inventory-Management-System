@@ -9,7 +9,7 @@
             <?php
             global $wpdb;
             $metrics = [
-                ['title' => 'Clientes', 'count' => $wpdb->get_var("SELECT COUNT(*) FROM clients"), 'color' => '#28a745', 'icon' => 'bi bi-person-workspace'],
+                ['title' => 'Clientes', 'count' => $wpdb->get_var("SELECT COUNT(*) FROM clients"), 'color' => '#058', 'icon' => 'bi bi-person-workspace'],
                 ['title' => 'Proveedores', 'count' => $wpdb->get_var("SELECT COUNT(*) FROM providers"), 'color' => '#fd7e14', 'icon' => 'fas fa-truck'],
                 ['title' => 'Productos', 'count' => $wpdb->get_var("SELECT COUNT(*) FROM products"), 'color' => '#6610f2', 'icon' => 'fas fa-box'],
                 ['title' => 'Facturas', 'count' => $wpdb->get_var("SELECT COUNT(*) FROM invoices"), 'color' => '#6c757d', 'icon' => 'fas fa-file-invoice'],

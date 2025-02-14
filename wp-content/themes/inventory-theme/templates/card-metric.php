@@ -1,4 +1,4 @@
-<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+<div class="col-lg-3 col-md-5 col-sm-6 mb-3">
     <div class="dashboard-card d-flex align-items-center p-3" style="background-color: <?php echo esc_attr($args['color']); ?>;">
         <div class="icon-container me-3">
             <i class="<?php echo esc_attr($args['icon']); ?>"></i>
